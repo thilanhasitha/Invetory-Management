@@ -6,11 +6,13 @@ import Dashboard from './pages/Dashboard'
 import Inventory from './pages/Inventory'
 import Report from './pages/Report'
 import Notification from './pages/Notification'
+import Sidebar from './component/Sidebar';
 
 export default function App() {
   return (
     <div>
       <BrowserRouter>
+      <Sidebar/>
         <Routes>
           <Route path="/" element={<Home />} /> {/* Add space after path */}
           <Route path='/dashboard' element={<Dashboard />} /> {/* Add space after path */}
